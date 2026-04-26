@@ -7,13 +7,12 @@ section.gridMain
           .element(@click="change_state({id: index })")
             | {{ element.titre }}
   .content.gridWhite
-    publications(v-if="maintenance.menu[0].state")
-    technicalReports(v-else-if="maintenance.menu[1].state")
-    workshop(v-else-if="maintenance.menu[2].state")
-    otherPublications(v-else-if="maintenance.menu[3].state")
-    reviewerFor(v-else-if="maintenance.menu[4].state")
-    pcMember(v-else-if="maintenance.menu[5].state")
-    teaching(v-else-if="maintenance.menu[6].state")
+    research(v-if="maintenance.menu[0].state")
+    publications(v-else-if="maintenance.menu[1].state")
+    reviewerFor(v-else-if="maintenance.menu[2].state")
+    pcMember(v-else-if="maintenance.menu[3].state")
+    teaching(v-else-if="maintenance.menu[4].state")
+    openPositions(v-else-if="maintenance.menu[5].state")
 </template>
 
 <style lang="less">
@@ -77,22 +76,20 @@ section.gridMain
 
 <script>
 import publications from "@/components/content/publications.vue";
-import technicalReports from "@/components/content/technicalReports.vue";
-import workshop from "@/components/content/workshops.vue";
-import otherPublications from "@/components/content/otherPublications.vue";
 import reviewerFor from "@/components/content/reviewerFor.vue";
 import pcMember from "@/components/content/pcMember.vue";
 import teaching from "@/components/content/teaching.vue";
+import research from "@/components/content/research.vue";
+import openPositions from "@/components/content/openPositions.vue";
 
 export default {
   components: {
     publications,
-    technicalReports,
-    workshop,
-    otherPublications,
     reviewerFor,
     pcMember,
     teaching,
+    research,
+    openPositions,
   },
   computed: {
     maintenance() {

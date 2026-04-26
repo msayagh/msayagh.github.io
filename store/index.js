@@ -1,9 +1,6 @@
 import Vuex from "vuex";
 
 import publications from './publication';
-import technical_reports from './technical-reports';
-import workshops from './workshops';
-import other_publications from './other-publication';
 import reviewer_for from './reviewer-for';
 import pc_member from './pc-member';
 import teaching from './teaching';
@@ -34,19 +31,11 @@ const database = () => {
                         },
                         menu: [
                               {
-                                    titre: "Publications",
+                                    titre: "Research",
                                     state: true,
                               },
                               {
-                                    titre: "Technical Reports",
-                                    state: false,
-                              },
-                              {
-                                    titre: "Workshops",
-                                    state: false,
-                              },
-                              {
-                                    titre: "Other Publications",
+                                    titre: "Publications",
                                     state: false,
                               },
                               {
@@ -61,10 +50,14 @@ const database = () => {
                                     titre: "Teaching",
                                     state: false,
                               },
+                              {
+                                    titre: "Open Positions",
+                                    state: false,
+                              },
                         ],
                   },
                   main: {
-                        sousTitre: "ASSISTANT PROFESSOR AT ETS (QUÉBEC UNIVERSITY).",
+                        sousTitre: "ASSOCIATE PROFESSOR AT ETS (QUÉBEC UNIVERSITY).",
                         titre: "mohammed sayagh",
                         image: {
                               link: "",
@@ -74,7 +67,7 @@ const database = () => {
                         email: "mohammed.sayagh@etsmtl.ca",
                         paragraphe: [
                               {
-                                    text: "I am an assistant professor at Ecole Technologie Supérieur - Québec University. Before that, I was working as a PostDoc fellow in"
+                                    text: "I am an associate professor at Ecole Technologie Supérieure - Québec University. Before that, I was working as a PostDoc fellow in"
                               },
                               {
                                     text: "the Software Analysis and Intelligence Lab (SAIL)",
@@ -116,10 +109,75 @@ const database = () => {
                                     link: "http://mcis.cs.queensu.ca/bram.html"
                               },
                               {
-                                    text: "I have a wide range of research interests that are related to empirical software engineering. My main research focus is related to the DevOps practices (e.g., configuration, log analysis) for multi-component software systems (e.g., microservices and distributed systems). My research is based on mining software repositories (e.g., Git, DockerHub, online forums, ...) and applying different qualitative and quantitative techniques (e.g., statistical analysis, machine learning, source code analysis) with the goal of recommending best practices and recommendation systems to improve software quality and reduce development and deployment costs."
+                                    text: "I focus on improving software DevOps pipelines and investigating methods that range from machine learning to Agentic-AI for DevOps practices. In particular, my current research studies how to improve our DevOps pipelines to better integrate AI agents as efficient team members in complex software systems (including LLM-based systems). My work combines empirical analysis and intelligent tooling to improve build, configuration, deployment, monitoring, and evolution workflows."
                               },
                         ]
 
+                  },
+                  research: {
+                        titre: "Research",
+                        statement: "I focus on improving software DevOps pipelines and investigating approaches that span from machine learning to Agentic-AI for DevOps practices. A central goal of my research is to understand and engineer how AI agents can act as effective team members in complex software systems, including LLM-based systems. ",
+                        themes: [
+                              {
+                                    titre: "From Machine Learning to Agentic-AI for Software DevOps",
+                                    icon: "🤖",
+                                    description: "Designing and evaluating the transition from predictive ML models to autonomous and semi-autonomous LLM agents for DevOps tasks such as pull request analysis, technical debt management, incident support, and CI pipeline decision-making."
+                              },
+                              {
+                                    titre: "DevOps & CI/CD",
+                                    icon: "⚙️",
+                                    description: "Investigating build optimization, continuous integration pipelines, GitHub Actions metrics, and merge request acceptance, while assessing where machine learning and agentic systems can augment developer workflows."
+                              },
+                              {
+                                    titre: "Configuration Management",
+                                    icon: "🔧",
+                                    description: "Studying configuration-related issues in complex systems and developing recommendation and automation techniques, from ML-based predictors to agentic assistants that guide configuration decisions."
+                              },
+                              {
+                                    titre: "Log Analysis & Monitoring",
+                                    icon: "📋",
+                                    description: "Exploring logging practices, log level prediction, log compression, and observability challenges, including how agentic approaches can support faster diagnosis and operational intelligence."
+                              },
+                              {
+                                    titre: "Microservices & Multi-Component Systems",
+                                    icon: "🏗️",
+                                    description: "Examining real-world DevOps practices in microservices and distributed systems, including monolith-to-microservice decomposition and opportunities for agent-driven orchestration and analysis."
+                              },
+                              {
+                                    titre: "Infrastructure-as-Code",
+                                    icon: "☁️",
+                                    description: "Analyzing IaC smells, code review practices, and infrastructure evolution, with a focus on ML- and agent-based support for safer and more reliable cloud operations."
+                              },
+                        ]
+                  },
+                  openPositions: {
+                        titre: "Open Positions",
+                        intro: "We are currently looking for 3 PhD students to join our research group at École de Technologie Supérieure (ÉTS), Québec University. We are also open to strong Master's applicants. If you are passionate about software engineering research, DevOps, and Agentic-AI for complex software systems, please reach out.",
+                        list: [
+                              {
+                                    type: "PhD",
+                                    title: "PhD Position in Empirical Software Engineering",
+                                    description: "I am seeking a PhD student to work on topics related to DevOps, AI-assisted software engineering, log analysis, configuration management, or related areas. The position includes a competitive scholarship and the opportunity to collaborate with world-class researchers.",
+                                    requirements: [
+                                          "Master's degree (or equivalent) in Computer Science, Software Engineering, or a related field",
+                                          "Strong programming skills (Python, Java, or similar)",
+                                          "Experience with data analysis, machine learning, or mining software repositories is a plus",
+                                          "Good written and spoken English communication skills",
+                                          "Self-motivated with the ability to work independently and in a team"
+                                    ]
+                              },
+                              {
+                                    type: "Master",
+                                    title: "Master's Position in Empirical Software Engineering",
+                                    description: "I am looking for Master's students (research-based) interested in conducting empirical studies on modern software engineering practices. Topics include DevOps, software quality, AI in SE, and more.",
+                                    requirements: [
+                                          "Bachelor's degree in Computer Science, Software Engineering, or a related field",
+                                          "Strong programming skills",
+                                          "Interest in research and data-driven analysis",
+                                          "Good written and spoken English or French communication skills"
+                                    ]
+                              }
+                        ]
                   },
                   notification: {
                         state: true,
@@ -146,9 +204,6 @@ const database = () => {
             },
             modules: {
                   publications,
-                  technical_reports,
-                  workshops,
-                  other_publications,
                   reviewer_for,
                   pc_member,
                   teaching,
@@ -158,12 +213,14 @@ const database = () => {
                   GET_MAINTENANCE: (state, payload) => state.maintenance,
                   GET_MAIN: (state, payload) => state.main,
                   GET_NOTIFICATION: (state, payload) => state.notification,
+                  GET_RESEARCH: (state) => state.research,
+                  GET_OPEN_POSITIONS: (state) => state.openPositions,
             },
             mutations: {
-                  GET_MAINTENANCE: (state, payload) => {
+                  SET_MAINTENANCE: (state, payload) => {
                         state.maintenance = payload;
                   },
-                  GET_NOTIFICATION: (state, payload) => {
+                  SET_NOTIFICATION: (state, payload) => {
                         state.notification = payload;
                   },
             },
