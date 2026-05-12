@@ -6,6 +6,18 @@ const publications = {
                   content: [
                         [
                               {
+                                    text: "Arabat, A., Sayagh, M., Hassine, J., (2026)."
+                              },
+                              {
+                                    text: "A Recommendation System for Predicting Dependencies among Software Changes - Insights from an Empirical Study on OpenStack,",
+                                    link: "",
+                              },
+                              {
+                                    text: "Accepted in the Empirical Software Engineering Journal (EMSE)."
+                              }
+                        ],
+                        [
+                              {
                                     text: "Kasdallah, I., Ghorab, MA, Jebbar, O., Sellami, K., Sayagh, M., Ouni, A., Saied, MA., (2026)."
                               },
                               {
