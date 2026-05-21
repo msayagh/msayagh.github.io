@@ -18,6 +18,30 @@ const publications = {
                         ],
                         [
                               {
+                                    text: "Khelifi, J., Ouni, A., Sayagh, M., Saied, MA., Khelifi, S., Bouktif, S., (2026). "
+                              },
+                              {
+                                    text: "Unpacking CI Workflows in Microservice-based Systems: Build Speed, Failures, and Fixes, ",
+                                    link: "",
+                              },
+                              {
+                                    text: "ACM Transactions on Software Engineering and Methodology (TOSEM)."
+                              }
+                        ],
+                        [
+                              {
+                                    text: "Belwafi, K., Sayagh, M., Ouni, A., (2026)."
+                              },
+                              {
+                                    text: "Code-Level Challenges and Opportunities in Hardware Description Languages: Insights from StackOverflow Discussions,",
+                                    link: "",
+                              },
+                              {
+                                    text: "Accepted for publication in the Integration journal."
+                              }
+                        ],
+                        [
+                              {
                                     text: "Kasdallah, I., Ghorab, MA, Jebbar, O., Sellami, K., Sayagh, M., Ouni, A., Saied, MA., (2026)."
                               },
                               {
@@ -74,18 +98,6 @@ const publications = {
                               },
                               {
                                     text: "Accepted for publication at the Mining Software Repositories (MSR) conference - mining challenge."
-                              }
-                        ],
-                        [
-                              {
-                                    text: "Belwafi, K., Sayagh, M., Ouni, A., (2026)."
-                              },
-                              {
-                                    text: "Code-Level Challenges and Opportunities in Hardware Description Languages: Insights from StackOverflow Discussions,",
-                                    link: "",
-                              },
-                              {
-                                    text: "Accepted for publication in the Integration journal."
                               }
                         ],
                         [
